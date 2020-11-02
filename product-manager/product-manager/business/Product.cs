@@ -1,18 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace product_manager.business
 {
-    public class Product
+    class Product
     {
         public String code { get; set; }
         public String description { get; set; }
-        public String price { get; set; }
+        public double price { get; set; }
 
         public Product()
         {
 
         }
-
-        public Product(string code, string description, string price)
+        public Product(string code, string description, double price)
         {
             this.code = code;
             this.description = description;
@@ -21,10 +23,7 @@ namespace product_manager.business
 
         public override string ToString()
         {
-            return "Product:  " + code + "," + description + "," + price;
-            
+            return "Product:  " + code + ", " + description + ", " + price;
         }
     }
-    
 }
-
