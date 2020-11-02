@@ -6,7 +6,7 @@ namespace product_manager
         public static String getString(String prompt)
         {
             Console.WriteLine(prompt);
-            String s = Console.ReadLine();  // read user entry
+            string s = Console.ReadLine();  // read user entry
 
             return s;
         }
@@ -81,7 +81,7 @@ namespace product_manager
                     d = double.Parse(Console.ReadLine());
                     break;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     Console.WriteLine("Enter something valid.");
                 }
